@@ -15,7 +15,7 @@ function generateSlideShow(id, name, folder, images, alt)
 	var str = '<h2 style="text-align:center">'+name+'</h2><div class="container"><div class="numbertext" id="numbertext'+countOfSlideShows+'">1 / '+images.length+'</div>';
 	for(var j = 0; j<images.length; j++)
 	{
-		str+='<div class="'+mySlides+'"><img class="slide_img slide_img'+countOfSlideShows+'" src="'+folder+'\\'+images[j]+'" alt="'+alt+'"></div>';
+		str+='<div class="mySlides '+mySlides+'"><img class="slide_img slide_img'+countOfSlideShows+'" src="'+folder+'\\'+images[j]+'" alt="'+alt+'"></div>';
 	}
 	str+='<a class="prev" onclick="plusSlides(-1, '+(countOfSlideShows-1)+')">&lt;</a>';
 	str+='<a class="next" onclick="plusSlides(1, '+(countOfSlideShows-1)+')">&gt;</a></div><div class="caption-container"><p id="caption'+countOfSlideShows+'"></p></div>';
