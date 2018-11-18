@@ -1,7 +1,7 @@
 body {
 font-family:"century gothic";
 font-size:18px;
-background: #FFFFFF url(../img/backgroundcats.png) repeat;
+background: #FFFFFF url(../img/meowers_preview2.png) repeat;
 }
 div.header {
 background-color:#595960;
@@ -22,6 +22,7 @@ float:left;
 width:100px;
 height:100px;
 border-radius:8px;
+margin-right:20px;
 }
 div.logo:hover {
 background: #FFD800;
@@ -45,6 +46,11 @@ div.team_say {
 float:left;
 margin:5px 5px 5px 20px;
 color:#FFFFFF;
+}
+
+.headtext:hover {
+color: #FFD800;
+transition: 0.5s;
 }
 p.f1 {
 text-transform:uppercase;
@@ -126,21 +132,26 @@ transition: 0.5s;
 
 /* unvisited link */
 a:link {
-color: #FFFFFF;
+color: #FFF;
 text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-color: #FFFFFF;
+color: #FFF;
 text-decoration: none;
 }
 
+
+hr{
+margin:20px 0px 20px 0px;
+}
+
 a:hover {
-color: #FFFFFF;
+color: #FFF;
 }
 
 /* selected link */
 a:active {
-color: #FFFFFF;
+color: #FFF;
 }
