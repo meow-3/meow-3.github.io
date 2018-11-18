@@ -17,7 +17,7 @@ body {
 img {
   vertical-align: middle;
   width:100%;
-  height:auto;
+  max-height:100%;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -82,28 +82,6 @@ img {
   padding: 2px 16px;
   color: white;
 }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
 </style>
 </head>
 <body>
@@ -113,19 +91,19 @@ img {
 		<div class="container">
 			<div class="numbertext" id="numbertext">1 / 6</div>
 			<div class="mySlides">
-				<img src="img\instructions_natasha\google_slides\google_slides_step1.1.png">
+				<img class="slide_img" src="img\instructions_natasha\google_slides\google_slides_step1.1.png">
 			</div>
 
 			<div class="mySlides">
-				<img src="img\instructions_natasha\google_slides\google_slides_step1.2.png">
+				<img class="slide_img" src="img\instructions_natasha\google_slides\google_slides_step1.2.png">
 			</div>
 			
 
 			<div class="mySlides">
-				<img src="img\instructions_natasha\google_slides\google_slides_step2.1.png">
+				<img class="slide_img" src="img\instructions_natasha\google_slides\google_slides_step2.1.png">
 			</div>
 			<div class="mySlides">
-				<img src="img\instructions_natasha\google_slides\google_slides_step2.2.png">
+				<img class="slide_img" src="img\instructions_natasha\google_slides\google_slides_step2.2.png" alt="8. Завантажимо зображення з інтернету іншим способом, через пошук. Змінимо його розмір через точки на контурах зображення і перетягнемо його в правий нижній кут слайда утримуючи клавішу і переміщуючи курсор до потрібної позиції. Додати зображення можна і іншими способами, наприклад обрати файл на власному комп’ютері або з хмарного диску.">
 			</div>
     
 			<a class="prev" onclick="plusSlides(-1)">&lt;</a>
@@ -133,22 +111,6 @@ img {
 
 			<div class="caption-container">
 				<p id="caption"></p>
-			</div>
-
-			<div class="row">
-				<div class="column">
-					<img class="demo cursor" src="img\instructions_natasha\google_slides\google_slides_step1.1.png" onclick="currentSlide(1)" alt="8. Завантажимо зображення з інтернету іншим способом, через пошук. Змінимо його розмір через точки на контурах зображення і перетягнемо його в правий нижній кут слайда утримуючи клавішу і переміщуючи курсор до потрібної позиції. Додати зображення можна і іншими способами, наприклад обрати файл на власному комп’ютері або з хмарного диску.">
-				</div>
-				<div class="column">
-					<img class="demo cursor" src="img\instructions_natasha\google_slides\google_slides_step1.2.png" onclick="currentSlide(2)" alt="step1.2">
-				</div>
-				
-				<div class="column">
-					<img class="demo cursor" src="img\instructions_natasha\google_slides\google_slides_step2.1.png" onclick="currentSlide(3)" alt="step2.1">
-				</div>
-				<div class="column">
-					<img class="demo cursor" src="img\instructions_natasha\google_slides\google_slides_step2.2.png" onclick="currentSlide(4)" alt="8. Завантажимо зображення з інтернету іншим способом, через пошук. Змінимо його розмір через точки на контурах зображення і перетягнемо його в правий нижній кут слайда утримуючи клавішу і переміщуючи курсор до потрібної позиції. Додати зображення можна і іншими способами, наприклад обрати файл на власному комп’ютері або з хмарного диску.">
-				</div>
 			</div>
 		</div>
 	</div>
@@ -168,7 +130,7 @@ img {
 		function showSlides(n) {
 		  var i;
 		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("demo");
+		  var dots = document.getElementsByClassName("slide_img");
 		  var captionText = document.getElementById("caption");
 		  var numberText = document.getElementById("numbertext");
 		  if (n > slides.length) {slideIndex = 1}
@@ -176,11 +138,7 @@ img {
 		  for (i = 0; i < slides.length; i++) {
 			slides[i].style.display = "none";
 		  }
-		  for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		  }
 		  slides[slideIndex-1].style.display = "block";
-		  dots[slideIndex-1].className += " active";
 		  captionText.innerHTML = dots[slideIndex-1].alt;
 		  captionText.innerHTML = dots[slideIndex-1].alt;
 		  
