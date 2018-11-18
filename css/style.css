@@ -96,6 +96,17 @@ p.menu:hover {
 background: #FFD800;
 transition: 0.5s;
 }
+span.menu {
+margin:10px;
+padding:10px;
+background: #595960;
+color: #000000;
+border-radius:8px;
+}
+span.menu:hover {
+background: #FFD800;
+transition: 0.5s;
+}
 
 /* unvisited link */
 a:link {
