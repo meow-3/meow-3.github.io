@@ -1,9 +1,10 @@
 var countOfSlideShows = 0;
-var slideIndex = [1,1];
+var slideIndex = [1, 1, 1];
 var slideId = [];
 
 function generateSlideShow(id, name, folder, images, alt)
 {
+	slideIndex[countOfSlideShows] = 1;
 	countOfSlideShows++;
 	var mySlides = "mySlides"+countOfSlideShows;
 	for(var j=0; j < countOfSlideShows; j++)
@@ -11,7 +12,7 @@ function generateSlideShow(id, name, folder, images, alt)
 		slideId[j] = "mySlides"+(j+1);
 	}
 	var obj = document.getElementById(id);
-	var str = '<h2 style="text-align:center">Slideshow Gallery</h2><div class="container"><div class="numbertext" id="numbertext'+countOfSlideShows+'">1 / '+images.length+'</div>';
+	var str = '<h2 style="text-align:center">'+name+'</h2><div class="container"><div class="numbertext" id="numbertext'+countOfSlideShows+'">1 / '+images.length+'</div>';
 	for(var j = 0; j<images.length; j++)
 	{
 		str+='<div class="'+mySlides+'"><img class="slide_img slide_img'+countOfSlideShows+'" src="'+folder+'\\'+images[j]+'" alt="'+alt+'"></div>';
