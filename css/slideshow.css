@@ -22,6 +22,7 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
+  max-height: 80vh;
   text-align: center;
 }
 
