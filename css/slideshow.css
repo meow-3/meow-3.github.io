@@ -73,7 +73,7 @@
 
 /* Container for image text */
 .caption-container {
-  text-align: left;
+  text-align: justify;
   background-color: #F7F7F7;
   padding: 2px 16px;
   color: white;
