@@ -6,8 +6,6 @@ body {
 }
 
 #menu ul {
-	margin: 0;
-	list-style: none;
 }
 
 #logo {
@@ -15,12 +13,16 @@ body {
 }
 
 #menu ul li {
+	height:auto;
+	margin: 5px 0px 5px 0px;
+	border-radius:8px;
 	display: inline-block;
 	padding:5px;
+	
 	-webkit-transition: ease 0.3s;
 	-moz-transition: ease 0.3s;
 	transition: ease 0.3s;
-	box-shadow:inset 0px 70px 0px #aaa;
+	box-shadow:inset 0px 100px 0px #aaa;
 }
 
 #menu ul li a {
