@@ -1,11 +1,12 @@
-body {
-	margin: 0 0 0 0;
+body {	
+	margin: 0px 0px 0px 0px;
 }
 #menu {
 	background-color: #ddd;
 }
 
 #menu ul {
+	margin: 0px 0px 0px 0px;
 }
 
 #logo {
@@ -45,3 +46,9 @@ body {
 .T:hover{
 	background:#1FDA9A;
 	}
+	
+.sticky {
+  position: fixed;
+  top: 0;
+  width:100%;
+}
