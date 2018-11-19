@@ -93,7 +93,7 @@ img {
 /* unvisited link */
 a:link {
 font-style: italic;
-color: #FFF;
+color: #525252;
 text-decoration: none;
 }
 
@@ -109,5 +109,5 @@ color: #FFD800;
 
 /* selected link */
 a:active {
-color: #FFF;
+color: #FFD800;
 }
