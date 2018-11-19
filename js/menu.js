@@ -1,11 +1,11 @@
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  //$('.test').html(y);
-  if (y > 40) {
-	$('.menu').css({position: 'fixed'});
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+var header = document.getElementById("menu");
+var sticky = header.offsetTop;
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
   }
-  else {
-	$('.menu').css({position: ''});
-  }
-  
-});
+}

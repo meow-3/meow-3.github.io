@@ -3,20 +3,16 @@ margin: 5px;
 font-size: 20px;
 }
 
-.menu * {
+#menu * {
 	border-radius:8px;
 }
 
-.logo {
-	width:60px;
-}
-
-.menu {
+#menu {
 left: 0;
 right: 0;
 background-color: white;}
 
-.menu ul {
+#menu ul {
 margin: 0;
 padding: 10px;
 list-style: none;
@@ -29,7 +25,7 @@ transition: all 200ms linear;
 -ms-transition: all 200ms linear;
 -o-transition: all 200ms linear;}
 
-.menu ul:hover {
+#menu ul:hover {
 border-bottom-color: blue;
 box-shadow: 0 0 40px blue;
 transition: all 200ms linear;
@@ -39,7 +35,11 @@ transition: all 200ms linear;
 -o-transition: all 200ms linear;
 }
 
-.menu ul li {
+#logo a img {
+	width:60px;
+}
+
+#menu ul li {
 	display: inline-block;
 	padding: 5px;
 	height: 40px;
@@ -50,7 +50,7 @@ transition: all 200ms linear;
 	box-shadow:inset 0px 70px 0px #aaa;
 }
 
-.menu ul li a {color: black;
+#menu ul li a {color: black;
 text-decoration: none;
 border-bottom-style: solid;
 border-bottom-color: transparent;
@@ -62,7 +62,7 @@ transition: all 150ms linear;
 -o-transition: all 150ms linear;
 }
 
-.menu ul li:hover a {
+#menu ul li:hover a {
 	color: #000;
 	border-bottom-style: solid;
 	border-bottom-color: blue;
@@ -74,7 +74,7 @@ transition: all 150ms linear;
 	-o-transition: all 150ms linear;
 }
 
-.menu ul li:hover{
+#menu ul li:hover{
 	box-shadow:inset 0px 0px 0px #333;
 	}
 .W:hover{
