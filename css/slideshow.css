@@ -22,10 +22,7 @@
 /* Hide the images by default */
 .mySlides {
   display: none;
-  height: 80vh;
-  max-height: 80vh;
-  text-align: center; 
-  vertical-align: middle;
+  text-align: center;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
