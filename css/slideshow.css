@@ -1,6 +1,10 @@
 body {
-  font-family: Arial;
-  margin: 0;
+font-family:"century gothic";
+font-size:18px;
+background: #FFFFFF url(../img/backgroundcats.png) repeat;
+}
+h2{
+font-weight: normal;
 }
 
 * {
@@ -8,22 +12,15 @@ body {
 }
 
 .SlideShow {
-  margin: 5% 10% 5% 15%;
+  margin: 3% 10% 3% 15%;
   width:70%;
-  font-size:16px;
 }
 
-.SlideShow h2 {
-	font-size:18px;
-}
-
-.slide_img {
-  max-height: 80vh;
-  height: auto;
+img {
+  vertical-align: middle;
   width:auto;
   max-width: 100%;
-  display: inline-block;
-  vertical-align: middle;
+  max-height: 85vh;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -34,10 +31,8 @@ body {
 /* Hide the images by default */
 .mySlides {
   display: none;
-  height: 80vh;
-  max-height: 80vh;
-  text-align: center; 
-  vertical-align: middle;
+  
+  text-align: center;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -87,8 +82,32 @@ body {
 
 /* Container for image text */
 .caption-container {
-  text-align: center;
-  background-color: #222;
+  text-align: left;
+  background-color: #F7F7F7;
   padding: 2px 16px;
-  color: white;
+  color: #000;
+  margin-top:10px;
+  border-radius:8px;
+}
+
+/* unvisited link */
+a:link {
+font-style: italic;
+color: #FFF;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+color: #FFF;
+text-decoration: none;
+}
+
+a:hover {
+color: #FFD800;
+}
+
+/* selected link */
+a:active {
+color: #FFF;
 }
