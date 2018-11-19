@@ -1,0 +1,68 @@
+body {
+	font-family:"century gothic";
+	font-size:18px;
+	background: #FFFFFF url(../img/backgroundcatscolor.png) repeat;
+}
+
+h2{
+	font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p.f1 {
+	text-transform:uppercase;
+	font-size:140%;
+	letter-spacing:2px;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-weight:bold;
+}
+p.f2 {
+	font-size:110%;
+	text-indent:40px;
+	margin:0px;
+	padding:0px;
+	font-weight:bold;
+}
+p.f3 {
+	font-size:100%;
+	text-indent:20px;
+	margin:0px;
+	padding:0px;
+	clear: both;
+}
+
+div.center_block {
+	padding:20px;
+	width:70%;
+	float: left;
+	background-color:#F7F7F7;
+	border-radius:8px;
+}
+
+
+/* unvisited link */
+a:link {
+font-style: italic;
+color: #525252;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+color: #525252;
+text-decoration: none;
+}
+
+a:hover {
+color: #FFD800;
+}
+
+/* selected link */
+a:active {
+color: #FFD800;
+}
