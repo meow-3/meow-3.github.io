@@ -2,6 +2,7 @@ body {
 	font-family:"century gothic";
 	font-size:18px;
 	background: #FFFFFF url(../img/backgroundcatscolor.png) repeat;
+	text-align: justify;
 }
 
 h2{
@@ -37,13 +38,11 @@ p.f3 {
 }
 
 div.center_block {
-	padding:20px;
-	width:70%;
-	float: left;
+	margin: 2% 20%;
 	background-color:#F7F7F7;
 	border-radius:8px;
+*/
 }
-
 
 /* unvisited link */
 a:link {
