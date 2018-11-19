@@ -22,7 +22,7 @@
 <body>
 <center><div id="menu">
 	  <ul>
-		<li id="logo"><a href="index.html"><img src="img/logo/logo.png"></a></li>
+		<li ><a href="index.html"><img id="logo" src="img/logo/logo.png"></a></li>
 		<li class="F"><a href="page_alina.html">Інструменти для комунікації в команді</a></li>
 		<li class="S"><a href="page_alexey.html">Інструменти для проведення онлайн-зустрічей</a></li>
 		<li class="T"><a href="page_natasha.html">Інструменти для створення презентацій</a></li>
@@ -34,6 +34,8 @@
 
 <div class="header">
 <div class="team_say">
+
+<a href="index.html"><img id="logo" src="img/logo/logo.png"></a>
 <p class="f1">Команда Meow3</p>
 <hr noshade>
 <p class="f2">Тема сайту: «Інструменти для віддаленої роботи в інтернеті»</p>
@@ -94,34 +96,6 @@
 </ol>
 </div>
 </div>
-<script>
-
-$(function() {
- 
-$(window).scroll(function() {
- 
-if($(this).scrollTop() != 0) {
- 
-$('#toTop').fadeIn();
- 
-} else {
- 
-$('#toTop').fadeOut();
- 
-}
- 
-});
- 
-$('#toTop').click(function() {
- 
-$('body,html').animate({scrollTop:0},800);
- 
-});
- 
-});
-
-</script>
-	
 <div id ="toTop">
 </div>
   
