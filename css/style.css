@@ -1,7 +1,7 @@
 body {
 font-family:"century gothic";
 font-size:18px;
-background: #FFFFFF url(../img/meowers_preview2.png) repeat;
+background: #FFFFFF url(../img/fon.png) repeat;
 }
 div.header {
 background-color:#595960;
@@ -55,17 +55,10 @@ hr{
 color:#FFFFFF;
 }
 
-div.left_block{
-width:20%;
-float: left;
-margin:0px;
-padding:0px;
-border-radius:8px;
-}
-
 div.center_block {
 padding:20px;
 width:70%;
+margin-left:15%;
 float: left;
 background-color:#F7F7F7;
 border-radius:8px;
