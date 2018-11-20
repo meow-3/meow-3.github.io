@@ -1,6 +1,6 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {FixMenu()};
 
-function myFunction() {
+function FixMenu() {
 var header = document.getElementById("menu");
 var sticky = header.offsetTop;
   if (window.pageYOffset > sticky) {
@@ -10,43 +10,23 @@ var sticky = header.offsetTop;
   }
 }
 
+
 function ShowContent(x) {
 	var sub = x.parentElement.getElementsByClassName("Soccer-content")[0];
-	sub.style = "display:block;";
+    sub.classList.toggle("show");
 }
 
-var onSub = 1;
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
 
-function CheckMenu() {
-	onSub--;
-	var d = document.querySelectorAll( ":hover" );
-	if(d.length > 0)
-	{
-		for(var i=0; i < d.length; i++)
-		{
-			if(d[i].className == "Soccer-content")
-			{
-				onSub = 1;
-			}
-		}
-	}
-	if(onSub < 0)
-	{
-		var subs = document.getElementsByClassName("Soccer-content");
-		for(var i=0; i<subs.length; i++)
-		{
-			subs[i].style = "display:none";
-		}
-		return;
-	}
-	
-	setTimeout(CheckMenu, 1000);
-}
-
-
-
-function HideContent(x) {
-	onSub = 3;
-	setTimeout(CheckMenu, 1000);
-	
+    var dropdowns = document.getElementsByClassName("Soccer-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
