@@ -130,9 +130,3 @@ color: #FFF;
 a:active {
 color: #FFF;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
