@@ -1,12 +1,9 @@
 body {
 	font-family:"century gothic";
 	font-size:18px;
-	background: #FFFFFF url(../img/backgroundcatscolor.png) repeat;
+	background: #FFFFFF url(../img/fon.png) no-repeat fixed;
+	background-size: 110%;
 	text-align: justify;
-}
-
-h2{
-	font-weight: normal;
 }
 
 * {
@@ -19,29 +16,76 @@ p.f1 {
 	letter-spacing:2px;
 	margin:0px;
 	padding:0px;
-	text-align:center;
-	font-weight:bold;
+	text-align:left;
+	font-weight:90;
+	margin-left:130px;
 }
 p.f2 {
 	font-size:110%;
 	text-indent:40px;
 	margin:2px;
 	padding:0px;
-	font-weight:bold;
+	font-weight:100;
+	text-align:center;
 }
 p.f3 {
 	font-size:100%;
 	text-indent:20px;
-	margin:25px;
+	margin:10px;
 	padding:0px;
 	clear: both;
 }
 
 div.center_block {
-	margin: 2% 20%;
-	background-color:#F7F7F7;
+	padding:20px;
+	margin: 4% 20%;
+	background-color:#F2F2F2;
 	border-radius:8px;
-*/
+}
+
+hr{
+height:1px;
+border-width:0;
+color:#3F2626;
+background-color:#3F2626;
+margin-left:130px;
+}
+img {
+vertical-align: middle;
+width:100%;
+max-height:100%;
+}
+div.logopic{
+float:left;
+width:120px;
+height:120px;
+margin-top:-120px;
+border-radius:8px;
+margin-right:20px;
+}
+div.logopic:hover {
+background-color: #595960;
+transition: 0.5s;
+}
+div.gotoinstuction{
+float:right;
+background: #9E9E9E;
+border-radius:8px;
+padding:5px;
+}
+
+div.gotoinstuction:hover {
+background: #FFAF03;
+transition: 0.5s;
+}
+
+div.footer{
+font-size:80%;
+color:#fff;
+margin:20px 0px 0px 0px;
+text-align:left;
+padding:10px;
+background-color:#595960;
 }
 
 /* unvisited link */
