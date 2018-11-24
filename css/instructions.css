@@ -42,7 +42,13 @@ div.center_block {
 	background-color:#F2F2F2;
 	border-radius:8px;
 }
-
+div.center_block_instruction {
+	padding:5px;
+	margin: 3% 10% 3% 15%;
+	width:70%;
+	background-color:#F7F7F7;
+	border-radius:8px;
+}
 hr{
 height:1px;
 border-width:0;
