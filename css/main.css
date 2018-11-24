@@ -4,23 +4,6 @@ font-size:18px;
 background: #FFFFFF url(../img/fon.png) repeat;
 }
 
-div.underhead {
-border-radius:8px;
-margin:0px 5px 5px 19%;
-padding:5px;	
-height:20px;
-font-size:70%;
-}
-div.team_say {
-float:left;
-margin:5px 5px 5px 20px;
-color:#FFFFFF;
-}
-
-.headtext:hover {
-color: #FFD800;
-transition: 0.5s;
-}
 p.f1 {
 text-transform:uppercase;
 font-size:140%;
@@ -40,13 +23,11 @@ text-indent:20px;
 margin:0px;
 padding:0px;
 }
+
 div.land {
 width:80%;
 margin-left:10%;
 text-align:left;
-}
-hr{
-color:#FFFFFF;
 }
 
 div.center_block {
@@ -69,28 +50,6 @@ padding:20px;
 background-color:#595960;
 border-radius:8px;
 }
-p.menu {
-margin:10px;
-padding:10px;
-background: #595960;
-color: #000000;
-border-radius:8px;
-}
-p.menu:hover {
-background: #FFD800;
-transition: 0.5s;
-}
-span.menu {
-margin:10px;
-padding:10px;
-background: #595960;
-color: #000000;
-border-radius:8px;
-}
-span.menu:hover {
-background: #FFD800;
-transition: 0.5s;
-}
 
 /* unvisited link */
 a:link {
@@ -102,11 +61,6 @@ text-decoration: none;
 a:visited {
 color: #FFF;
 text-decoration: none;
-}
-
-
-hr{
-margin:20px 0px 20px 0px;
 }
 
 a:hover {
