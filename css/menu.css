@@ -13,6 +13,25 @@ body {
 	width:60px;
 }
 
+#menu.sticky {
+	font-size: 80%;
+}
+
+.sticky ul li a #logo {
+	width:30px;
+}
+.sticky ul li a #logo {
+	width:20px;
+}
+
+#menu div.header {
+	display:block;
+}
+
+#menu.sticky div.header {
+	display:none;
+}
+
 #menu ul li {
 	height:auto;
 	margin: 5px 0px 5px 0px;

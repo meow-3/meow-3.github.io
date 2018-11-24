@@ -3,13 +3,7 @@ font-family:"century gothic";
 font-size:18px;
 background: #FFFFFF url(../img/fon.png) repeat;
 }
-div.header {
-background-color:#595960;
-border-radius:8px;
-margin:0px 0px 10px 0px;
-padding:10px;
-height:105px;
-}
+
 div.underhead {
 border-radius:8px;
 margin:0px 5px 5px 19%;

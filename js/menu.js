@@ -11,22 +11,16 @@ var sticky = header.offsetTop;
 }
 
 
-function ShowContent(x) {
-	var sub = x.parentElement.getElementsByClassName("Soccer-content")[0];
-    sub.classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("Soccer-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+	var all_sub = document.getElementsByClassName("Soccer-content");
+	for(var i = 0; i < all_sub.length; i++)
+	{
+		if (all_sub[i].classList.contains('show')) {
+			all_sub[i].classList.remove('show');
+		}
+	}
+	if (event.target.matches('.dropbtn')) {
+		var sub = event.target.parentElement.getElementsByClassName("Soccer-content")[0];
+		sub.classList.toggle("show");
+	}
 }
