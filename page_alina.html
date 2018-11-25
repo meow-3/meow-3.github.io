@@ -19,47 +19,66 @@
 	<script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
 	<script src="js/jquery-latest.js" type="text/javascript"></script>
 	<script src="js/script.js" type="text/javascript"></script>
+		<script type="text/javascript">
+ 
+$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},800);
+ 
+});
+ 
+});
+ 
+</script>
 </head>
 <body>
 <center><div id="menu">
 	  <ul>
 		<li ><a href="index.html"><img id="logo" src="img/logo/cat.png"></a></li>
-		<div class="header">
-				<p class="f1" style="color:#FFF;">Команда Meow3</p>
-				<p class="f2" style="color:#FFF;">Інструменти для віддаленої роботи в інтернеті</p>
-		</div>
 		<li class="F" class="Soccer">
-			<a class="dropbtn">Комунікації в команді</a>
+			<a onmouseover="ShowContent(this);" onmouseout="HideContent(this);" href="page_alexey.html" class="dropbtn">Комунікації в команді</a>
 			<div class="Soccer-content" >
-			  <a href="page_alina.html">Опис</a>
 			  <a href="page_alina.html#telegram">Telegram</a>
 			  <a href="page_alina.html#viber">Viber</a>
 			  <a href="page_alina.html#slack">Slack</a>
-			  <a href="page_alina.html#faсebookmessager">Facebook Messager</a>
+			  <a href="page_alina.html#facebookmessager">Facebook Messager</a>
 			  <a href="page_alina.html#whatsapp">WhatsApp</a>
 			</div>
 		</li>
 		<li class="S" class="Soccer">
-			<a class="dropbtn">Проведення онлайн-зустрічей</a>
+			<a onmouseover="ShowContent(this);" onmouseout="HideContent(this);" href="page_alexey.html" class="dropbtn">Проведення онлайн-зустрічей</a>
 			<div class="Soccer-content" >
-			  <a href="page_alexey.html">Опис</a>
 			  <a href="page_alexey.html#skype">Skype</a>
 			  <a href="page_alexey.html#teamviewer">TeamViewer</a>
 			  <a href="page_alexey.html#joinmе">Join.mе</a>
+			  <a href="page_alexey.html#powerpoint">Discord</a>
 			  <a href="page_alexey.html#hangouts">Hangouts</a>
-			  <a href="page_alexey.html#discord">Discord</a>
 			</div>
 		</li>
 		<li class="T" class="Soccer">
-			<a class="dropbtn">Створення презентацій</a>
+			<a onmouseover="ShowContent(this);" onmouseout="HideContent(this);" href="page_natasha.html" class="dropbtn">Створення презентацій</a>
 			<div class="Soccer-content" >
-				<a href="page_natasha.html">Опис</a>
-				<a href="page_natasha.html#googleslides">Google Презентації</a>
-				<a href="page_natasha.html#slides">Slides</a>
-				<a href="page_natasha.html#prezi">Prezi</a>
-				<a href="page_natasha.html#ludus">Ludus</a>	
-				<a href="page_natasha.html#powerpoint">Power Point</a>			  
-				<a href="page_natasha.html#haikudeck">Haiku Deck</a>
+			  <a href="page_natasha.html#prezi">Prezi</a>
+			  <a href="page_natasha.html#slides">Slides</a>
+			  <a href="page_natasha.html#haikudeck">Haiku Deck</a>
+			  <a href="page_natasha.html#powerpoint">PowerPoint</a>
+			  <a href="page_natasha.html#ludus">Ludus</a>
 			</div>
 		</li>
 	  </ul>
@@ -69,12 +88,12 @@
 <p class="f2">Інструменти для коммунікації в команді</p>
 <p class="f3">Буває тається так, що вам необхідно виконувати роботу, коли члени вашої команди знаходяться у різних частинах міста або,навіть світу. Здавалося, що обмін думками та ідями за таких умов буде неймовріно складним.Але це не так </p>
 <p class="f3">Є белика кількість інструментів для вирішення даної проблеми.Найпопулярнішими інструментами для коммункацій у команді є Telegram, Viber, WhatsApp, Slack. Про ці та інші сервіси в порівнянні можна почитати за <a href="http://softcatalog.info/ru/obzor/programmy-dlya-sozdaniya-prezentaciy">посиланням</a></p>
-<p class="f3">Кожет з представлених інструментів є по своєму зручними. Ми детально розгрлянемо особливості кожного з них.</p>
+<p class="f3">Кожет з представлених інструментів є по своєму зручними. Ми детально розглянемо особливості кожного з них.</p>
 <ol>
 <li><a href="page_alina.html#telegram">Telegram</a></li>
 <li><a href="page_alina.html#viber">Viber</a></li>
 <li><a href="page_alina.html#slack">Slack</a></li>
-<li> <a href="page_alina.html#faсebookmessager">Facebook Messager</a></li>
+<li> <a href="page_alina.html#facebookmessager">Facebook Messager</a></li>
 <li><a href="page_alina.html#whatsapp">WhatsApp</a></li>
 </ol>
 </div>
@@ -181,6 +200,7 @@
 <div class="footer">
 <p class="f2">Савеленко Наталія</p>
 </div>
-	
+<div id ="toTop">
+</div>	
 </body>
 </html>
